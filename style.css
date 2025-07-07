@@ -7,8 +7,8 @@
 
 /* Base page styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f1f1f1;
+  font-family: Inter, Public Sans, DM MONO;
+  background-image: url('img/star-background.jpg');
   padding: 20px;
 }
 
@@ -16,6 +16,9 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  border: rgb(24, 58, 131) 5px solid;
+  border-radius: 20px;
+  background-color: white;
 }
 
 /* Header */
@@ -29,7 +32,7 @@ body {
 }
 
 h1 {
-  font-family: Verdana, sans-serif;
+  font-family: Inter, Public Sans, DM MONO;
   font-weight: bold;
   color: #212121;
 }
@@ -53,7 +56,7 @@ h1 {
 /* Inputs and buttons */
 input[type="date"],
 button {
-  font-family: Arial, sans-serif;
+  font-family: Inter, Public Sans, DM MONO;
   font-weight: normal;
   color: #666;
   padding: 10px 15px;
@@ -108,6 +111,12 @@ button:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  /* Add a smooth transition for scaling */
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.08);
 }
 
 /* Three columns on wider screens */
@@ -142,3 +151,4 @@ button:hover {
   font-size: 48px;
   margin-bottom: 20px;
 }
+
