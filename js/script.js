@@ -56,6 +56,7 @@ async function fetchAPOD() {
 setupDateInputs(startInput, endInput);
 console.log("date", startDate);
 
+//Check if the submit button is being clicked
 getImageBtn.addEventListener('click', function() {
   fetchAPOD();
 })
